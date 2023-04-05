@@ -1,0 +1,22 @@
+<html>
+<body>
+<form method="post">
+	Size of the multiplication table: <input type="text" name="size"> <br>
+	<input type="submit">
+</form>
+
+</body>
+<?php
+echo"<table border ='1'>";
+for( $r =1; $r <11; $r++)
+{
+	echo"<tr>";
+		for($c=1; $c<11; $c++)
+		{
+			echo "<td><a href='#' title='$r x $c = ". $r * $c . " ' >" . $r*$c . "</a></td>" ;
+		}
+	echo"</tr>";
+}
+echo"</table>"
+?>
+</html>
